@@ -33,3 +33,32 @@ Square Accesss Token: "sq0atp-[0-9A-Za-z\\-_]{22}"
 Square OAuth Secret: "sq0csp-[0-9A-Za-z\\-_]{43}"
 Twilio API Key: "(?i)twilio(.{0,20})?SK[0-9a-f]{32}"
 Twitter Secret: "(?i)twitter(.{0,20})?[0-9a-z]{35,44}"
+
+#SSH REGEX
+SSH-DSS Key: "ssh-dss AAAAB3NzaC1kc3[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+ecdsa-sha2-nistp256: "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNT[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+sk-ecdsa-sha2-nistp256@openssh.com: "sk-ecdsa-sha2-nistp256@openssh.com AAAAInNrLWVjZHNhLXNoYTItbmlzdHAyNTZAb3BlbnNzaC5jb2[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+ssh-ed25519: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+sk-ssh-ed25519@openssh.com: "sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29t[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+ssh-rsa: "ssh-rsa AAAAB3NzaC1yc2[0-9A-Za-z+/]+[=]{0,3}(\s.*)?$"
+
+#Github
+Github Personal Access Token: "^ghp_[a-zA-Z0-9]{36}$"
+Github PAT (Fine-Grained): "^github_pat_[a-zA-Z0-9]{22}_[a-zA-Z0-9]{59}$"
+Github OAUTH 2.0: "^gho_[a-zA-Z0-9]{36}$"
+
+#Paypal
+Paypal Access Token: "access_token,production$[0-9a-z]{161[0-9a,]{32}"
+
+#Google Cloud
+Google Cloud API: "[A-Za-z0-9_]{21}--[A-Za-z0-9_]{8}"
+Google Cloud OAuth: "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+
+#Heroku
+Heroku API: "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+
+#Amazon
+Amazon Marketing Services: "amzn.mws.[0-9a-f]{8}-[0-9a-f]{4}-10-9a-f1{4}-[0-9a,]{4}-[0-9a-f]{12}"
+
+#OpenAI
+OpenAI API: "sk-[A-Za-z0-9]{20}T3BlbkFJ[A-Za-z0-9]{20}"
